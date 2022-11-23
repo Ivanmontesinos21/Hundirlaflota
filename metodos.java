@@ -2,13 +2,13 @@ public class metodos {
     public static void main(String[] args) {
         char[][] tablero = new char[10][10];
         char[][] tableroDisparos = new char[10][10];
-        inicializarTablero(tablero);
+        inicializarTablero(tablero,tableroDisparos);
 
 
     }
 
 
-    public static void inicializarTablero(char[][] tablero) {
+    public static void inicializarTablero(char[][] tablero, char[][] tableroDisparos ) {
         //tablero1
         //Poner el agua
 
@@ -17,37 +17,36 @@ public class metodos {
                 tablero[x][y] = '~';
             }
         }
-        for (int x = 0; x < tablero.length; x++) {
-            for (int y = 0; y < tablero.length; y++) {
-                tablero[x][y] = '~';
 
-                for (int j = 0; j < tablero.length; j++) {
 
-                    System.out.print( tablero[x][y] + "");
-
-                }
-
-                char letras = 'A';
-                for (int i = 0; i < tablero.length; i++) {
-                    System.out.print(letras + " ");
-                    for (int j = 0; j < tablero.length; j++) {
-                        System.out.print(tablero[i][j] + " ");
-                    }
-                    System.out.println("");
-                    letras++;
-                }
-                //Poner numeros.
-                System.out.print(" ");
-                for (int j = 0; j < tablero.length; j++) {
-                    System.out.print(" " + j);
-
-                }
+        char letras = 'A';
+        for (int i = 0; i < tablero.length; i++) {
+            System.out.print(letras + " ");
+            for (int j = 0; j < tablero.length; j++) {
+                System.out.print(tablero[i][j] + " ");
             }
+
+            System.out.println("");
+            letras++;
+            for (int k=0;k< tableroDisparos.length;k++){
+                System.out.print("");
+
+            }
+            }
+
+        // Poner numeros.
+        System.out.print(" ");
+        for (int j = 0; j < tablero.length; j++) {
+            System.out.print(" " + j);
 
         }
 
     }
-}
+
+    }
+
+
+
 
    // public static void visualizarTablero(char[][] tablero,char[][] tableroDisparos){}
     // Metodo que implementa el disparo del jugador
