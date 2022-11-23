@@ -4,15 +4,16 @@ public class prueba {
         char[][] tableroDisparos = new char[10][10];
         char[][] tableroPc = new char[10][10];
         char[][] tableroDisparosPc = new char[10][10];
-        rellenar(tablerojugador,tableroDisparosPc);
-        mostrarJugador(tablerojugador,tableroDisparos);
-        rellenarpc(tableroPc,tableroDisparosPc);
-        mostrarPc(tableroPc,tableroDisparosPc);
+
+       // rellenar(tablerojugador,tableroDisparosPc);
+       // mostrarJugador(tablerojugador,tableroDisparos);
+        //rellenarpc(tableroPc,tableroDisparosPc);
+        //mostrarPc(tableroPc,tableroDisparosPc);
 
 
-    }
 
-    public static void rellenar(char[][] tablerojugador, char[][] tableroDisparos ) {
+
+  /*  public static void rellenar(char[][] tablerojugador, char[][] tableroDisparos ) {
 
         public static void rellenar(char[][] tablerojugador) {
 
@@ -85,4 +86,4 @@ public class prueba {
     }
 
 
-
+*/

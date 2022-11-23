@@ -1,8 +1,11 @@
 public class prueba3 {
     public static void main(String[] args) {
         char[][] tablerojugador = new char[10][10];
+        char[][] tableroDisparos = new char[10][10];
+        char[][] tableroPc = new char[10][10];
+        char[][] tableroDisparosPc = new char[10][10];
         rellenar(tablerojugador);
-        mostrarJugador(tablerojugador);
+        mostrarJugador(tablerojugador,tableroDisparos);
     }
 
     public static void rellenar(char[][] tablerojugador) {
@@ -15,7 +18,7 @@ public class prueba3 {
 
     }
 
-    public static void mostrarJugador(char[][] tablerojugador, ta) {
+    public static void mostrarJugador(char[][] tablerojugador, char[][] tableroDisparos) {
 
         char letras = 'A';
         //mostrar tablero
