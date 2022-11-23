@@ -14,55 +14,58 @@ public class prueba {
 
     public static void rellenar(char[][] tablerojugador, char[][] tableroDisparos ) {
 
-        for (int i = 0; i < tablerojugador.length; i++) {
-            System.out.print("");
-            for (int j = 0; j < tablerojugador[i].length; j++) {
-                tablerojugador[i][j] = '~';
+        public static void rellenar(char[][] tablerojugador) {
+
+            for (int i = 0; i < tablerojugador.length; i++) {
+                for (int j = 0; j < tablerojugador[i].length; j++) {
+                    tablerojugador[i][j] = '~';
+                }
             }
+
         }
-        for (int i = 0; i < tableroDisparos.length; i++) {
+
+        public static void mostrarJugador(char[][] tablerojugador,char ta) {
+
+            char letras = 'A';
+            //mostrar tablero
+            for (int k = 0; k < tablerojugador.length; k++) {
+                System.out.print(letras);
+                for (int j = 0; j < tablerojugador.length; j++) {
+                    System.out.print(tablerojugador[k][j] + " ");
+                }
+                System.out.print("\t\t\t");
+                System.out.print(letras);
+                for (int j = 0; j < tablerojugador.length; j++) {
+                    System.out.print(tablerojugador[k][j] + " ");
+                }
+                System.out.println("");
+                letras++;
+            }
+            //poner numeros
             System.out.print(" ");
-            for (int j = 0; j < tableroDisparos[i].length; j++) {
-                tableroDisparos[i][j] = '~';
+            for (int j = 0; j < tablerojugador.length; j++) {
+                System.out.print(" " + j);
             }
+            System.out.print("           ");
+            for (int j = 0; j < tablerojugador.length; j++) {
+                System.out.print(" " + j);
+            }
+
+
         }
+
     }
 
 
-            public static void mostrarJugador ( char[][] tablerojugador, char[][] tableroDisparos){
-
-                for (int i = 0; i < tablerojugador.length; i++) {
-                    for (int j = 0; j < tablerojugador.length; j++) {
-                        System.out.print(tablerojugador[i][j] + " ");
 
 
-                    }
-                }
-                for (int i = 0; i < tableroDisparos.length; i++) {
-
-                    for (int j = 0; j < tableroDisparos.length; j++) {
-                        System.out.print(tableroDisparos[i][j] + " ");
-                }
-
-            }
-
-
-
-
-
-                    }
-
-
-
-
-
-       public static void rellenarpc ( char tableroPc[][], char tableroDisparosPc[][]){
+    public static void rellenarpc ( char tableroPc[][], char tableroDisparosPc[][]){
             for (int i = 0; i < tableroPc.length; i++) {
                 for (int j = 0; j < tableroPc.length; i++)
                     tableroPc[i][j] = '~';
             }
            for (int i = 0; i < tableroDisparosPc.length; i++) {
-               System.out.println();
+               System.out.println("");
                for (int j = 0; j < tableroDisparosPc[i].length; j++) {
                    tableroDisparosPc[i][j] = '~';
                }
@@ -75,7 +78,7 @@ public class prueba {
         public static void mostrarPc ( char tableroPc[][], char tableroDisparosPc[][]){
             for (int i = 0; i < tableroPc.length; i++)
                 for (int j = 0; j < tableroPc[i].length; j++)
-                    System.out.println(tableroPc[i][j] +"");
+                    System.out.print(tableroPc[i][j] +"");
 
         }
 
