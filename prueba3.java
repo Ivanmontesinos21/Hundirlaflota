@@ -9,7 +9,7 @@ public class prueba3 {
         char[][] tableroDisparos = new char[10][10];
         char[][] tableroPc = new char[10][10];
         char[][] tableroDisparosPc = new char[10][10];
-        int[] Vector = new int[5];
+
         rellenar(tablerojugador, tableroDisparos);
         mostrarJugador(tablerojugador, tableroDisparos);
         rellenarpc(tableroPc, tableroDisparosPc);
@@ -123,7 +123,7 @@ public class prueba3 {
 
         do {
             do {
-                System.out.println("\n" + "introduce una cordensda");
+                System.out.println("\n" + "introduce una cordenada");
                 coordenadas = sc.nextLine();
 
                 if (coordenadas.length() == 2)
@@ -148,16 +148,13 @@ public class prueba3 {
         } while (!funcionabien);
     }
 
-    public static void getorientacion() {
 
-        Scanner sc = new Scanner(System.in);
-        String orientacion;
-        orientacion = sc.next();
-    }
+
+}
 
 
 
-            }
+
 
 
 
