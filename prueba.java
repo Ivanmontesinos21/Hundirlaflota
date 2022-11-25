@@ -1,5 +1,5 @@
-public class prueba {
-    public static void main(String[] args) {
+public class prueba {}
+    /*public static void main(String[] args) {
         char[][] tablerojugador = new char[10][10];
         char[][] tableroDisparos = new char[10][10];
         char[][] tableroPc = new char[10][10];
@@ -13,7 +13,7 @@ public class prueba {
 
 
 
-  /*  public static void rellenar(char[][] tablerojugador, char[][] tableroDisparos ) {
+    public static void rellenar(char[][] tablerojugador, char[][] tableroDisparos ) {
 
         public static void rellenar(char[][] tablerojugador) {
 
@@ -84,6 +84,5 @@ public class prueba {
         }
 
     }
-
 
 */

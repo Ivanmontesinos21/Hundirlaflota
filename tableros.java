@@ -1,25 +1,16 @@
-
-
-
-import java.util.Scanner;
-
-public class prueba3 {
+public class tableros {
     public static void main(String[] args) {
         char[][] tablerojugador = new char[10][10];
         char[][] tableroDisparos = new char[10][10];
         char[][] tableroPc = new char[10][10];
         char[][] tableroDisparosPc = new char[10][10];
-        int[] Vector = new int[5];
-        rellenar(tablerojugador, tableroDisparos);
-        mostrarJugador(tablerojugador, tableroDisparos);
-        rellenarpc(tableroPc, tableroDisparosPc);
-        mostrarPc(tableroPc, tableroDisparosPc);
-        getcoordenada();
 
+        rellenar(tablerojugador,tableroDisparos);
+        mostrarJugador(tablerojugador,tableroDisparos);
+        rellenarpc(tableroPc,tableroDisparosPc);
+        mostrarPc(tableroPc,tableroDisparosPc);
 
     }
-
-
     public static void rellenar(char[][] tablerojugador,  char[][] tableroDisparos) {
         System.out.print("\t"+"Tablero jugador"+  "\t\t\t\t\t" +"Tablero Disparos");
         System.out.println("");
@@ -87,8 +78,8 @@ public class prueba3 {
 
     }
 
-    public static void mostrarPc ( char tableroPc[][], char tableroDisparosPc[][]) {
-        char letras = 'A';
+    public static void mostrarPc ( char tableroPc[][], char tableroDisparosPc[][]){
+        char letras='A';
         System.out.println("");
         for (int k = 0; k < tableroPc.length; k++) {
             System.out.print(letras);
@@ -114,65 +105,4 @@ public class prueba3 {
             System.out.print(" " + j);
         }
     }
-
-    public static void getcoordenada() {
-        Scanner sc = new Scanner(System.in);
-        String coordenadas;
-        boolean correcto = false;
-        boolean funcionabien = false;
-
-        do {
-            do {
-                System.out.println("\n" + "introduce una cordensda");
-                coordenadas = sc.nextLine();
-
-                if (coordenadas.length() == 2)
-                    correcto = true;
-                else
-                    System.out.println("No se han usados los caracteres correctos");
-            } while (!correcto);
-
-            if (coordenadas.toUpperCase().charAt(0) >= 'A' && coordenadas.toUpperCase().charAt(0) <= 'J') {
-                funcionabien = true;
-            }else{
-                System.out.println("no es letra");
-            }
-
-            if (funcionabien) {
-                if (Integer.parseInt(String.valueOf(coordenadas.charAt(1))) >= 0 && Integer.parseInt(String.valueOf(coordenadas.charAt(1))) <= 9) {
-                    funcionabien = true;
-                }
-            }
-
-
-        } while (!funcionabien);
-    }
-
-    public static void getorientacion() {
-
-        Scanner sc = new Scanner(System.in);
-        String orientacion;
-        orientacion = sc.next();
-    }
-
-
-
-            }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
